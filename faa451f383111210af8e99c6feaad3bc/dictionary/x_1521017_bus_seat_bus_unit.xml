@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="6e6719bb83111210af8e99c6feaad3d8" label="Bus Unit" max_length="40" name="x_1521017_bus_seat_bus_unit" type="collection">
-        <element label="Status" max_length="40" name="status" type="boolean"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="aircon" label="Accessibility" max_length="40" name="accessibility" type="choice">
             <choice>
@@ -12,6 +11,11 @@
         <element attributes="edge_encryption_enabled=true" label="Company" max_length="40" name="company" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Departure Schedule" max_length="40" name="departure_schedule" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" default="Operational" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Defunct" sequence="2" value="defunct"/>
+            </choice>
+        </element>
         <index name="index">
             <element name="bus_stops"/>
         </index>
