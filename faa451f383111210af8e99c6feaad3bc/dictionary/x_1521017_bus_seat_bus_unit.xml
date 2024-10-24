@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6e6719bb83111210af8e99c6feaad3d8" label="Bus Unit" max_length="40" name="x_1521017_bus_seat_bus_unit" type="collection">
+        <element label="Status" max_length="40" name="status" type="boolean"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="aircon" label="Accessibility" max_length="40" name="accessibility" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Aircon" value="aircon"/>
+                <element inactive_on_update="false" label="Non-Aircon" value="non_aircon"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Bus Stops" max_length="32" name="bus_stops" reference="x_1521017_bus_seat_bus_stop" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Company" max_length="40" name="company" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Departure Schedule" max_length="40" name="departure_schedule" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="bus_stops"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
