@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="DELETE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description>Bus Unit Reservation Event</description>
+        <event_name>x_1521017_bus_seat.bus_unit_update</event_name>
+        <fired_by>Bus Unit Update</fired_by>
+        <priority>100</priority>
+        <queue>bus_unit_update</queue>
+        <suffix>bus_unit_update</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-04 00:45:19</sys_created_on>
+        <sys_id>948f61d783219610af8e99c6feaad37a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_1521017_bus_seat.bus_unit_update</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>sysevent_register_948f61d783219610af8e99c6feaad37a</sys_update_name>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-04 00:53:58</sys_updated_on>
+        <table>x_1521017_bus_seat_bus_unit</table>
+    </sysevent_register>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</application>
+        <file_path/>
+        <instance_id>b5e9cac93bc346d8baf6048aa4e45aab</instance_id>
+        <instance_name>dev277382</instance_name>
+        <name>sysevent_register_948f61d783219610af8e99c6feaad37a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register"><sysevent_register action="INSERT_OR_UPDATE"><caller_access/><derived_priority>100</derived_priority><description>Bus Unit Reservation Event</description><event_name>x_1521017_bus_seat.bus_unit_update</event_name><fired_by>Bus Unit Update</fired_by><priority>100</priority><queue>bus_unit_update</queue><suffix>bus_unit_update</suffix><sys_class_name>sysevent_register</sys_class_name><sys_created_by>susan.marsh</sys_created_by><sys_created_on>2024-11-04 00:45:19</sys_created_on><sys_id>948f61d783219610af8e99c6feaad37a</sys_id><sys_mod_count>4</sys_mod_count><sys_name>x_1521017_bus_seat.bus_unit_update</sys_name><sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package><sys_policy/><sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope><sys_update_name>sysevent_register_948f61d783219610af8e99c6feaad37a</sys_update_name><sys_updated_by>susan.marsh</sys_updated_by><sys_updated_on>2024-11-04 00:53:58</sys_updated_on><table>x_1521017_bus_seat_bus_unit</table></sysevent_register></record_update>]]></payload>
+        <payload_hash>314704773</payload_hash>
+        <record_name>x_1521017_bus_seat.bus_unit_update</record_name>
+        <reverted_from/>
+        <source>6c6da2b483611210af8e99c6feaad364</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-04 00:53:58</sys_created_on>
+        <sys_id>1a92759b83619610af8e99c6feaad390</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192f4aa0ccc0000001</sys_recorded_at>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-04 00:53:58</sys_updated_on>
+        <type>Event Registration</type>
+        <update_guid>9e92759bde61961087aff1653bbbd58f</update_guid>
+        <update_guid_history>9e92759bde61961087aff1653bbbd58f:314704773,268231db5f619610a33f05ff5d97592d:1313890850,d502759b6761961030a25bc6a3e18e89:2068381147,afe1f95b1e6196100d4c2d9f4abdce9b:2100309014,2790b1d3d761961064fe5531d4cf5a57:916550366</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 10:08:57</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_register">sysevent_register</sys_db_object>
+        <sys_id>02c752548048419c80100bc7b2486a61</sys_id>
+        <sys_metadata>948f61d783219610af8e99c6feaad37a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521017_bus_seat.bus_unit_update</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_parent display_value="Bus Unit">6e6719bb83111210af8e99c6feaad3d8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_scope_delete display_value="">4070ad42ed67447bbcac6592671efb79</sys_scope_delete>
+        <sys_update_name>sysevent_register_948f61d783219610af8e99c6feaad37a</sys_update_name>
+        <sys_update_version display_value="sysevent_register_948f61d783219610af8e99c6feaad37a">1a92759b83619610af8e99c6feaad390</sys_update_version>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 10:08:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

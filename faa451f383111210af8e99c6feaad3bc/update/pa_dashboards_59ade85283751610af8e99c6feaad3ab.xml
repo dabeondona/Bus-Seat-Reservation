@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_dashboards">
+    <pa_dashboards action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <breakdown_source/>
+        <color/>
+        <disable_multiple_element>false</disable_multiple_element>
+        <group/>
+        <groups/>
+        <is_breakdown>false</is_breakdown>
+        <managed_breakdown/>
+        <managed_publisher/>
+        <name>Completed Reservations Tracking Dashboar</name>
+        <no_bulk_migration>false</no_bulk_migration>
+        <no_tabs>false</no_tabs>
+        <notification_link_label/>
+        <notification_link_url/>
+        <notification_text/>
+        <order/>
+        <owner display_value="Erik  Small">fd6b2e3083611210af8e99c6feaad3a9</owner>
+        <restrict_to_roles/>
+        <role_override>true</role_override>
+        <roles/>
+        <should_migrate_permissions>false</should_migrate_permissions>
+        <sys_class_name>pa_dashboards</sys_class_name>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-13 03:35:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59ade85283751610af8e99c6feaad3ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Completed Reservations Tracking Dashboar</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>pa_dashboards_59ade85283751610af8e99c6feaad3ab</sys_update_name>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-13 03:35:53</sys_updated_on>
+        <users/>
+        <visible_to>2</visible_to>
+    </pa_dashboards>
+</record_update>

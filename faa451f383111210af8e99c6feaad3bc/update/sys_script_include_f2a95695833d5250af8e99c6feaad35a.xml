@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1521017_bus_seat.GetEmailAddress</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetEmailAddress</name>
+        <script><![CDATA[var GetEmailAddress = Class.create();
+GetEmailAddress.prototype = Object.extendsObject(global.AbstractAjaxProcessor,{
+    getEmail: function() {
+        var gr = new GlideRecord('sys_user');
+        gr.get(gs.getUserID());
+        return gr.email;  
+    },
+    type: 'GetEmailAddress'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 08:55:10</sys_created_on>
+        <sys_id>f2a95695833d5250af8e99c6feaad35a</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>GetEmailAddress</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>sys_script_include_f2a95695833d5250af8e99c6feaad35a</sys_update_name>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:29:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

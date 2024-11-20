@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="6e6719bb83111210af8e99c6feaad3d8" label="Bus Unit" max_length="40" name="x_1521017_bus_seat_bus_unit" type="collection">
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Departure Schedule" max_length="40" name="departure_schedule_test" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="aircon" label="Accessibility" max_length="40" name="accessibility" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Aircon" value="aircon"/>
@@ -8,18 +9,22 @@
             </choice>
         </element>
         <element attributes="encode_utf8=false" label="Bus Stops" max_length="32" name="bus_stops" reference="x_1521017_bus_seat_bus_stop" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Company" max_length="40" name="company" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Departure Schedule" max_length="40" name="departure_schedule" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="string"/>
         <element choice="3" default="Operational" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Defunct" sequence="2" value="defunct"/>
+                <element inactive_on_update="false" label="Operational" sequence="1" value="operational"/>
             </choice>
         </element>
+        <element label="Bus Company" max_length="32" name="bus_company" reference="x_1521017_bus_seat_bus_company" type="reference"/>
         <index name="index">
-            <element name="bus_stops"/>
+            <element name="bus_company"/>
         </index>
         <index name="index2">
+            <element name="bus_stops"/>
+        </index>
+        <index name="index3">
             <element name="sys_class_name"/>
         </index>
     </element>

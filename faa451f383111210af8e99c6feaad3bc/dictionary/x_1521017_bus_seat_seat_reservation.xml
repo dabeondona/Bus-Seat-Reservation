@@ -2,7 +2,6 @@
     <element db_object_id="6cb8d13f83111210af8e99c6feaad3dc" label="Seat Reservation" max_length="40" name="x_1521017_bus_seat_seat_reservation" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Origin" max_length="40" name="origin" type="string"/>
         <element label="Seat Number" max_length="40" name="seat_number" type="integer"/>
-        <element attributes="edge_encryption_enabled=true" label="Applicant" max_length="40" name="applicant" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="awaiting_approval" label="Status" max_length="40" name="status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Completed" value="completed"/>
@@ -15,11 +14,16 @@
         <element attributes="encode_utf8=false" label="Bus" max_length="32" name="bus" reference="x_1521017_bus_seat_bus_unit" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Destination" max_length="40" name="destination" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Applicant's Email" max_length="50" name="applicant_s_email" read_only="true" type="string"/>
         <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Cost" max_length="20" name="cost" type="price"/>
+        <element label="Applicant" max_length="32" name="applicant" read_only="true" reference="sys_user" type="reference"/>
         <index name="index">
-            <element name="bus"/>
+            <element name="applicant"/>
         </index>
         <index name="index2">
+            <element name="bus"/>
+        </index>
+        <index name="index3">
             <element name="sys_class_name"/>
         </index>
     </element>

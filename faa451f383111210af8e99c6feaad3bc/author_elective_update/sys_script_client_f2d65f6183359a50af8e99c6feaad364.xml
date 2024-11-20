@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>[Seat Reservation] Fare Notification</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    // Calculate the fare based on origin and destination
+    var origin = g_form.getValue('origin');
+    var destination = g_form.getValue('destination');
+    var currency = g_form.getValue('currency'); // Assume currency is set as "USD" or "PHP"
+    var fare = calculateFare(origin, destination, currency);
+
+    // Display notification with the fare in the chosen currency
+    var currencySymbol = currency === "USD" ? "$" : "₱";
+    g_form.addInfoMessage("The fare for this trip will be: " + currencySymbol + fare.toFixed(2));
+
+    return true; // Allow the form to be submitted
+}
+
+function calculateFare(origin, destination, currency) {
+    // Define a fare rate per kilometer in USD
+    var fareRateUSD = 0.5; // dollars per kilometer
+    var exchangeRate = 56; // Exchange rate from USD to PHP
+
+    // Define distances in kilometers between various origins and destinations
+    var distances = {
+        "CIT": { "Minglanilla": 10, "South Bus Terminal": 20, "North Bus Terminal": 30 },
+        "Minglanilla": { "CIT": 10, "South Bus Terminal": 15, "North Bus Terminal": 25 },
+        "South Bus Terminal": { "CIT": 20, "Minglanilla": 15, "North Bus Terminal": 10 },
+        "North Bus Terminal": { "CIT": 30, "Minglanilla": 25, "South Bus Terminal": 10 }
+        // Add more origin-destination pairs as needed
+    };
+
+    // Check if there's a direct distance between the origin and destination
+    if (distances[origin] && distances[origin][destination] !== undefined) {
+        var distance = distances[origin][destination];
+
+        // Calculate the fare based on the distance and fare rate in USD
+        var fareUSD = distance * fareRateUSD;
+
+        // Convert to PHP if the selected currency is PHP
+        if (currency === "PHP") {
+            return fareUSD * exchangeRate;
+        }
+
+        return fareUSD; // Return in USD if the selected currency is USD
+    } else {
+        // Default fare in USD for undefined routes
+        var defaultFareUSD = 5.00;
+        
+        // Convert to PHP if the selected currency is PHP
+        return currency === "PHP" ? defaultFareUSD * exchangeRate : defaultFareUSD;
+    }
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rebecca.holmes</sys_created_by>
+        <sys_created_on>2024-11-11 07:59:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f2d65f6183359a50af8e99c6feaad364</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>[Seat Reservation] Fare Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>sys_script_client_f2d65f6183359a50af8e99c6feaad364</sys_update_name>
+        <sys_updated_by>rebecca.holmes</sys_updated_by>
+        <sys_updated_on>2024-11-11 08:24:43</sys_updated_on>
+        <table>x_1521017_bus_seat_seat_reservation</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</application>
+        <file_path/>
+        <instance_id>b5e9cac93bc346d8baf6048aa4e45aab</instance_id>
+        <instance_name>dev277382</instance_name>
+        <name>sys_script_client_f2d65f6183359a50af8e99c6feaad364</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;[Seat Reservation] Fare Notification&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    // Calculate the fare based on origin and destination
+    var origin = g_form.getValue('origin');
+    var destination = g_form.getValue('destination');
+    var currency = g_form.getValue('currency'); // Assume currency is set as "USD" or "PHP"
+    var fare = calculateFare(origin, destination, currency);
+
+    // Display notification with the fare in the chosen currency
+    var currencySymbol = currency === "USD" ? "$" : "₱";
+    g_form.addInfoMessage("The fare for this trip will be: " + currencySymbol + fare.toFixed(2));
+
+    return true; // Allow the form to be submitted
+}
+
+function calculateFare(origin, destination, currency) {
+    // Define a fare rate per kilometer in USD
+    var fareRateUSD = 0.5; // dollars per kilometer
+    var exchangeRate = 56; // Exchange rate from USD to PHP
+
+    // Define distances in kilometers between various origins and destinations
+    var distances = {
+        "CIT": { "Minglanilla": 10, "South Bus Terminal": 20, "North Bus Terminal": 30 },
+        "Minglanilla": { "CIT": 10, "South Bus Terminal": 15, "North Bus Terminal": 25 },
+        "South Bus Terminal": { "CIT": 20, "Minglanilla": 15, "North Bus Terminal": 10 },
+        "North Bus Terminal": { "CIT": 30, "Minglanilla": 25, "South Bus Terminal": 10 }
+        // Add more origin-destination pairs as needed
+    };
+
+    // Check if there's a direct distance between the origin and destination
+    if (distances[origin] &amp;&amp; distances[origin][destination] !== undefined) {
+        var distance = distances[origin][destination];
+
+        // Calculate the fare based on the distance and fare rate in USD
+        var fareUSD = distance * fareRateUSD;
+
+        // Convert to PHP if the selected currency is PHP
+        if (currency === "PHP") {
+            return fareUSD * exchangeRate;
+        }
+
+        return fareUSD; // Return in USD if the selected currency is USD
+    } else {
+        // Default fare in USD for undefined routes
+        var defaultFareUSD = 5.00;
+        
+        // Convert to PHP if the selected currency is PHP
+        return currency === "PHP" ? defaultFareUSD * exchangeRate : defaultFareUSD;
+    }
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rebecca.holmes&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-11 07:59:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f2d65f6183359a50af8e99c6feaad364&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;[Seat Reservation] Fare Notification&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat"&gt;faa451f383111210af8e99c6feaad3bc&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Bus Seat Reservation"&gt;faa451f383111210af8e99c6feaad3bc&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_f2d65f6183359a50af8e99c6feaad364&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rebecca.holmes&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-11 08:24:43&lt;/sys_updated_on&gt;&lt;table&gt;x_1521017_bus_seat_seat_reservation&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1603940935</payload_hash>
+        <record_name>[Seat Reservation] Fare Notification</record_name>
+        <reverted_from/>
+        <source>d80dd13b83e15250af8e99c6feaad3b5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rebecca.holmes</sys_created_by>
+        <sys_created_on>2024-11-11 08:24:43</sys_created_on>
+        <sys_id>95ec17a183759a50af8e99c6feaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1931a533e4d0000001</sys_recorded_at>
+        <sys_updated_by>rebecca.holmes</sys_updated_by>
+        <sys_updated_on>2024-11-11 08:24:43</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>1dec17a1db759a5024395ea62ceb144d</update_guid>
+        <update_guid_history>1dec17a1db759a5024395ea62ceb144d:1603940935,382c53a156759a50612796894cc53e1f:2017328020,8937dbe9bdf19a50609f781a3b807cd0:-1599385698</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rebecca.holmes</sys_created_by>
+        <sys_created_on>2024-11-11 08:37:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>94793e30eb284be88121cd48570d8840</sys_id>
+        <sys_metadata>f2d65f6183359a50af8e99c6feaad364</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>[Seat Reservation] Fare Notification</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_parent display_value="Seat Reservation">6cb8d13f83111210af8e99c6feaad3dc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_scope_delete display_value="">4070ad42ed67447bbcac6592671efb79</sys_scope_delete>
+        <sys_update_name>sys_script_client_f2d65f6183359a50af8e99c6feaad364</sys_update_name>
+        <sys_update_version display_value="sys_script_client_f2d65f6183359a50af8e99c6feaad364">95ec17a183759a50af8e99c6feaad34e</sys_update_version>
+        <sys_updated_by>rebecca.holmes</sys_updated_by>
+        <sys_updated_on>2024-11-11 08:37:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

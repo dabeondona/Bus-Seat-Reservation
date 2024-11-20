@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-13 04:51:51</sys_created_on>
+        <sys_id>f65ff85683f91610af8e99c6feaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521017_bus_seat_st_seat_reservation.x_1521017_bus_seat.seat_reservation_user</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_security_acl display_value="x_1521017_bus_seat_st_seat_reservation">3a5ff85683f91610af8e99c6feaad3ac</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_f65ff85683f91610af8e99c6feaad3cb</sys_update_name>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-13 04:51:51</sys_updated_on>
+        <sys_user_role display_value="x_1521017_bus_seat.seat_reservation_user" name="x_1521017_bus_seat.seat_reservation_user">a25fb85683f91610af8e99c6feaad37b</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</application>
+        <file_path/>
+        <instance_id>b5e9cac93bc346d8baf6048aa4e45aab</instance_id>
+        <instance_name>dev277382</instance_name>
+        <name>sys_security_acl_role_f65ff85683f91610af8e99c6feaad3cb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>erik.small</sys_created_by><sys_created_on>2024-11-13 04:51:51</sys_created_on><sys_id>f65ff85683f91610af8e99c6feaad3cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1521017_bus_seat_st_seat_reservation.x_1521017_bus_seat.seat_reservation_user</sys_name><sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package><sys_policy/><sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope><sys_security_acl display_value="x_1521017_bus_seat_st_seat_reservation">3a5ff85683f91610af8e99c6feaad3ac</sys_security_acl><sys_update_name>sys_security_acl_role_f65ff85683f91610af8e99c6feaad3cb</sys_update_name><sys_updated_by>erik.small</sys_updated_by><sys_updated_on>2024-11-13 04:51:51</sys_updated_on><sys_user_role display_value="x_1521017_bus_seat.seat_reservation_user" name="x_1521017_bus_seat.seat_reservation_user">a25fb85683f91610af8e99c6feaad37b</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1452012049</payload_hash>
+        <record_name>x_1521017_bus_seat_st_seat_reservation.x_1521017_bus_seat.seat_reservation_user</record_name>
+        <reverted_from/>
+        <source>d3587c8483f51650af8e99c6feaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-13 04:51:51</sys_created_on>
+        <sys_id>725ff85683f91610af8e99c6feaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19323dd14c50000001</sys_recorded_at>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-13 04:51:51</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>765ff85682f91610f4ab9c5b6b1b47ce</update_guid>
+        <update_guid_history>765ff85682f91610f4ab9c5b6b1b47ce:1452012049</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1521017_bus_seat_st_seat_reservation.x_1521017_bus_seat.seat_reservation_user">38bfb81a83f91610af8e99c6feaad3e4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-13 04:53:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1e497accd5b2456c9b582eb6d7f0c984</sys_id>
+        <sys_metadata>f65ff85683f91610af8e99c6feaad3cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521017_bus_seat_st_seat_reservation.x_1521017_bus_seat.seat_reservation_user</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_parent display_value="">3a5ff85683f91610af8e99c6feaad3ac</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_scope_delete display_value="">4070ad42ed67447bbcac6592671efb79</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_f65ff85683f91610af8e99c6feaad3cb</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_f65ff85683f91610af8e99c6feaad3cb">725ff85683f91610af8e99c6feaad3cf</sys_update_version>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-13 04:53:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

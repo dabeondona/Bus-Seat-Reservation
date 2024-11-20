@@ -20,6 +20,25 @@
             <element>status</element>
             <hint/>
             <inactive>false</inactive>
+            <label>Operational</label>
+            <language>en</language>
+            <name>x_1521017_bus_seat_bus_unit</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>walter.pineda</sys_created_by>
+            <sys_created_on>2024-11-04 13:03:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>walter.pineda</sys_updated_by>
+            <sys_updated_on>2024-11-04 13:03:31</sys_updated_on>
+            <value>operational</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
             <label>Defunct</label>
             <language>en</language>
             <name>x_1521017_bus_seat_bus_unit</name>

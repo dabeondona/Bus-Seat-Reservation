@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description/>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>fully_automated</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Seat Reservation</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="Erik  Small">fd6b2e3083611210af8e99c6feaad3a9</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=c5bea3a5833d9a50af8e99c6feaad3cb&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <recurring_price>0</recurring_price>
+        <request_method/>
+        <roles/>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <short_description/>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-11 10:08:56</sys_created_on>
+        <sys_id>c5bea3a5833d9a50af8e99c6feaad3cb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Seat Reservation</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>sc_cat_item_c5bea3a5833d9a50af8e99c6feaad3cb</sys_update_name>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-13 05:08:29</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <version>5</version>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=c5bea3a5833d9a50af8e99c6feaad3cb"/>
+    <fx_price action="DELETE" query="id=c5bea3a5833d9a50af8e99c6feaad3cb"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="">USD</currency>
+        <field>price</field>
+        <id>c5bea3a5833d9a50af8e99c6feaad3cb</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="">USD</reference_currency>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-11 10:08:56</sys_created_on>
+        <sys_id>84c4372d837d9a50af8e99c6feaad3a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-11 10:08:56</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="">USD</currency>
+        <field>recurring_price</field>
+        <id>c5bea3a5833d9a50af8e99c6feaad3cb</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="">USD</reference_currency>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-11 10:08:56</sys_created_on>
+        <sys_id>c4c4372d837d9a50af8e99c6feaad3a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-11 10:08:56</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</application>
+        <file_path/>
+        <instance_id>b5e9cac93bc346d8baf6048aa4e45aab</instance_id>
+        <instance_name>dev277382</instance_name>
+        <name>sc_cat_item_c5bea3a5833d9a50af8e99c6feaad3cb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item"><sc_cat_item action="INSERT_OR_UPDATE"><access_type>restricted</access_type><active>true</active><availability>on_desktop</availability><billable>false</billable><category/><checked_out/><cost>0</cost><custom_cart/><delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan><delivery_plan_script/><delivery_time>1970-01-03 00:00:00</delivery_time><description/><display_price_property>non_zero</display_price_property><entitlement_script/><flow_designer_flow/><fulfillment_automation_level>fully_automated</fulfillment_automation_level><group/><hide_sp>false</hide_sp><icon/><ignore_price>true</ignore_price><image/><location/><make_item_non_conversational>false</make_item_non_conversational><mandatory_attachment>false</mandatory_attachment><meta/><mobile_hide_price>false</mobile_hide_price><mobile_picture/><mobile_picture_type>use_desktop_picture</mobile_picture_type><model/><name>Seat Reservation</name><no_attachment_v2>false</no_attachment_v2><no_cart>false</no_cart><no_cart_v2>false</no_cart_v2><no_delivery_time_v2>false</no_delivery_time_v2><no_order>false</no_order><no_order_now>false</no_order_now><no_proceed_checkout>false</no_proceed_checkout><no_quantity>false</no_quantity><no_quantity_v2>false</no_quantity_v2><no_save_as_draft>false</no_save_as_draft><no_search>false</no_search><no_wishlist_v2>false</no_wishlist_v2><omit_price>false</omit_price><order>0</order><ordered_item_link/><owner display_value="Erik  Small">fd6b2e3083611210af8e99c6feaad3a9</owner><picture/><preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=c5bea3a5833d9a50af8e99c6feaad3cb&amp;sysparm_preview=true", "summary");</preview><price>0</price><published_ref/><recurring_frequency/><recurring_price>0</recurring_price><request_method/><roles/><sc_catalogs/><sc_ic_item_staging/><sc_ic_version/><sc_template/><short_description/><show_variable_help_on_load>false</show_variable_help_on_load><start_closed>false</start_closed><state/><sys_class_name>sc_cat_item</sys_class_name><sys_created_by>erik.small</sys_created_by><sys_created_on>2024-11-11 10:08:56</sys_created_on><sys_id>c5bea3a5833d9a50af8e99c6feaad3cb</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Seat Reservation</sys_name><sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package><sys_policy/><sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope><sys_update_name>sc_cat_item_c5bea3a5833d9a50af8e99c6feaad3cb</sys_update_name><sys_updated_by>erik.small</sys_updated_by><sys_updated_on>2024-11-13 05:08:29</sys_updated_on><taxonomy_topic/><template/><template_manager_roles/><type>item</type><use_sc_layout>true</use_sc_layout><vendor/><version>5</version><visible_bundle>true</visible_bundle><visible_guide>true</visible_guide><visible_standalone>true</visible_standalone><workflow/></sc_cat_item><sys_translated_text action="delete_multiple" query="documentkey=c5bea3a5833d9a50af8e99c6feaad3cb"/><fx_price action="delete_multiple" query="id=c5bea3a5833d9a50af8e99c6feaad3cb"/><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="">USD</currency><field>price</field><id>c5bea3a5833d9a50af8e99c6feaad3cb</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="">USD</reference_currency><sys_created_by>erik.small</sys_created_by><sys_created_on>2024-11-11 10:08:56</sys_created_on><sys_id>84c4372d837d9a50af8e99c6feaad3a2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>erik.small</sys_updated_by><sys_updated_on>2024-11-11 10:08:56</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="">USD</currency><field>recurring_price</field><id>c5bea3a5833d9a50af8e99c6feaad3cb</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="">USD</reference_currency><sys_created_by>erik.small</sys_created_by><sys_created_on>2024-11-11 10:08:56</sys_created_on><sys_id>c4c4372d837d9a50af8e99c6feaad3a3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>erik.small</sys_updated_by><sys_updated_on>2024-11-11 10:08:56</sys_updated_on><table>sc_cat_item</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>1426453169</payload_hash>
+        <record_name>Seat Reservation</record_name>
+        <reverted_from/>
+        <source>d3587c8483f51650af8e99c6feaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-13 05:08:30</sys_created_on>
+        <sys_id>7e234dd6833d1610af8e99c6feaad3c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19323ec52b40000001</sys_recorded_at>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-13 05:08:30</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>b2234dd61d3d16102afd264320f90bc3</update_guid>
+        <update_guid_history>b2234dd61d3d16102afd264320f90bc3:1426453169,321cbfa95331da504a5908de0ec4ae66:971475819,54cab369b131da50fc7b55da56664277:-1124065622,47e8fbed0cfd9a5011aa95eff514dfd3:1075360233,54c4372deb7d9a5007eb4054e5b351f7:-1020181208,c4c4372df67d9a50c9e6ac46ef4b48e6:-381369384</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Seat Reservation">fa234dd6833d1610af8e99c6feaad3e1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2024-11-13 05:08:31</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>0cc77c3ebcfe493bad971519e9d2e6d9</sys_id>
+        <sys_metadata>c5bea3a5833d9a50af8e99c6feaad3cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Seat Reservation</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_scope_delete display_value="">4070ad42ed67447bbcac6592671efb79</sys_scope_delete>
+        <sys_update_name>sc_cat_item_c5bea3a5833d9a50af8e99c6feaad3cb</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_c5bea3a5833d9a50af8e99c6feaad3cb">7e234dd6833d1610af8e99c6feaad3c3</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-11-13 05:08:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

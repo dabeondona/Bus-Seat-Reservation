@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[function calculateArrivalTime(origin, destination) {
+    // Replace this with actual logic or API calls to get arrival times
+    var estimatedTime;
+    if (origin !== "terminal") {
+        estimatedTime = 15; // Mock time, replace with actual calculation
+    } else {
+        estimatedTime = 0;
+    }
+    return estimatedTime;
+}
+
+function calculateFare(bus, origin, destination) {
+    // Replace this with actual fare calculation logic or API calls
+    var baseFare = 10;
+    var distanceFare = 5;
+    var totalFare = baseFare + distanceFare;
+    return totalFare;
+}
+
+function reserveSeat() {
+    var origin = document.getElementById('origin').value;
+    var destination = document.getElementById('destination').value;
+    var bus = document.getElementById('bus').value;
+
+    // Show estimated arrival time
+    if (origin !== "terminal") {
+        var estimatedTime = calculateArrivalTime(origin, destination);
+        alert("The bus will take approximately " + estimatedTime + " minutes to arrive at your stop.");
+    }
+
+    // Show fare estimate
+    var fare = calculateFare(bus, origin, destination);
+    alert("The estimated fare for your journey is: $" + fare);
+}
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_1521017_bus_seat_Bus Reservation.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide">
+    <html>
+        <head>
+            <title>Bus Reservation</title>
+        </head>
+        <body>
+            <div>
+                <label for="bus">Bus:</label>
+                <select id="bus">
+                    <!-- Options for bus routes -->
+                </select>
+            </div>
+            <div>
+                <label for="origin">Origin:</label>
+                <select id="origin">
+                    <!-- Options for bus stops as origin -->
+                </select>
+            </div>
+            <div>
+                <label for="destination">Destination:</label>
+                <select id="destination">
+                    <!-- Options for bus stops as destination -->
+                </select>
+            </div>
+            <div>
+                <button type="button" onclick="reserveSeat()">Reserve Seat</button>
+            </div>
+        </body>
+    </html>
+</j:jelly>
+]]></html>
+        <name>Bus Reservation</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>rebecca.holmes</sys_created_by>
+        <sys_created_on>2024-11-05 12:58:20</sys_created_on>
+        <sys_id>f30129bb83255250af8e99c6feaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bus Reservation</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>sys_ui_page_f30129bb83255250af8e99c6feaad354</sys_update_name>
+        <sys_updated_by>rebecca.holmes</sys_updated_by>
+        <sys_updated_on>2024-11-05 12:58:20</sys_updated_on>
+    </sys_ui_page>
+</record_update>

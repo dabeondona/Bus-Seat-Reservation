@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>true</applies_req_item>
+        <applies_sc_task>true</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item/>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name/>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') return;
+
+    // Get the Bus Unit field
+    var busUnitField = g_form.getControl('bus_unit');
+    var busCompany = newValue;
+
+    // Query for bus units based on the selected bus company (Note: You can use GlideRecord in a scoped script if the system property allows global objects)
+    var busUnitGR = new GlideRecord('x_bus_unit'); // Scoped table for Bus Units (replace 'x_bus_unit' with your table's name)
+    busUnitGR.addQuery('company', busCompany);
+    busUnitGR.query();
+
+    // Clear existing options
+    busUnitField.clearOptions();
+
+    // Populate the Bus Unit dropdown
+    while (busUnitGR.next()) {
+        busUnitField.addOption(busUnitGR.sys_id, busUnitGR.name);
+    }
+}
+]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>erik.small</sys_created_by>
+        <sys_created_on>2024-11-13 04:41:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c5c349a83791610af8e99c6feaad382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>catalog_script_client_6c5c349a83791610af8e99c6feaad382</sys_update_name>
+        <sys_updated_by>erik.small</sys_updated_by>
+        <sys_updated_on>2024-11-13 04:41:39</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

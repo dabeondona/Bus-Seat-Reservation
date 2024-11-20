@@ -1,0 +1,1643 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=9968000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>notify_users_on_bus_details_update</internal_name>
+        <label_cache>[{"name":"Updated_1.current.status","label":"Trigger - Record Updated➛Bus Unit Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"status","choices":[{"used":false,"image":"","label":"Operational","reference":false,"rawLabel":"Operational","selected":false,"missing":false,"value":"operational","parameters":{"name":"x_1521017_bus_seat_bus_unit"}},{"used":false,"image":"","label":"Defunct","reference":false,"rawLabel":"Defunct","selected":false,"missing":false,"value":"defunct","parameters":{"name":"x_1521017_bus_seat_bus_unit"}}],"usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"Updated_1.current.departure_schedule","label":"Trigger - Record Updated➛Bus Unit Record➛Departure Schedule","reference":"","reference_display":"Departure Schedule","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"departure_schedule","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Bus Unit Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"number","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"Updated_1.current.sys_updated_on","label":"Trigger - Record Updated➛Bus Unit Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"sys_updated_on","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"Updated_1.current.bus_company","label":"Trigger - Record Updated➛Bus Unit Record➛Bus Company","reference":"x_1521017_bus_seat_bus_company","reference_display":"Bus Company","type":"reference","base_type":"reference","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"bus_company","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"0cb06f04-b629-465f-8db2-2ef95ca69372.Record.applicant","label":"1 - Look Up Record➛Seat Reservation Record➛Applicant","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1521017_bus_seat_seat_reservation","column_name":"applicant","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":["ah_to"],"55e82dfa-21de-4a3e-826f-6169550ab707":["ah_to"]}},{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛Bus Unit Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"sys_id","usedInstances":{"bb594e9a-5e14-4669-bcc2-2052e026c23a":["conditions"],"0cb06f04-b629-465f-8db2-2ef95ca69372":["conditions"]}},{"name":"bb594e9a-5e14-4669-bcc2-2052e026c23a.Records","label":"1 - Look Up Records➛Seat Reservation Records","reference":"x_1521017_bus_seat_seat_reservation","reference_display":"Seat Reservation","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0cb06f04-b629-465f-8db2-2ef95ca69372.Record.applicant_s_email","label":"1 - Look Up Record➛Seat Reservation Record➛Applicant\u0027s Email","reference":"","reference_display":"Applicant\u0027s Email","type":"string","base_type":"string","parent_table_name":"x_1521017_bus_seat_seat_reservation","column_name":"applicant_s_email","usedInstances":{}},{"name":"292c1c0e-d58c-4dd1-842d-72cfce2934b9.Record.user","label":"2 - Look Up Record➛Group Member Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"user","usedInstances":{"55e82dfa-21de-4a3e-826f-6169550ab707":["ah_cc"]}},{"name":"b49c1ebf-11f8-4707-b4f9-b4a4958d20d7.Records","label":"2 - Look Up Records➛Group Role Records","reference":"sys_group_has_role","reference_display":"Group Role","type":"records","base_type":"records","usedInstances":{"55e82dfa-21de-4a3e-826f-6169550ab707":["ah_cc"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>55e826d183759250af8e99c6feaad39f</master_snapshot>
+        <name>Notify Users on Bus Details Update</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b1e866d183759250af8e99c6feaad3ce</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 08:30:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>39845ad583b95250af8e99c6feaad3d1</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Notify Users on Bus Details Update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>sys_hub_flow_39845ad583b95250af8e99c6feaad3d1</sys_update_name>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1521017_bus_seat_bus_unit">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b1e866d183759250af8e99c6feaad3ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:04</sys_updated_on>
+        <table>x_1521017_bus_seat_bus_unit</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>39845ad583b95250af8e99c6feaad3d1</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>c89a729583bd9250af8e99c6feaad313</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <trigger display_value="">b1e866d183759250af8e99c6feaad3ce</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=39845ad583b95250af8e99c6feaad3d1^sys_idNOT INc89a729583bd9250af8e99c6feaad313"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=39845ad583b95250af8e99c6feaad3d1^sys_idNOT IN43d86e9183759250af8e99c6feaad3ec"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Users on Bus Details Update">39845ad583b95250af8e99c6feaad3d1</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>43d86e9183759250af8e99c6feaad3ec</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:14</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=43d86e9183759250af8e99c6feaad3ec"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>43d86e9183759250af8e99c6feaad3ec</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>83d86e9183759250af8e99c6feaad3ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>43d86e9183759250af8e99c6feaad3ec</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>8fd86e9183759250af8e99c6feaad3ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <value>x_1521017_bus_seat_bus_unit</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>43d86e9183759250af8e99c6feaad3ec</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>cbd86e9183759250af8e99c6feaad3ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=43d86e9183759250af8e99c6feaad3ec"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=39845ad583b95250af8e99c6feaad3d1^sys_idNOT IN3d845ad583b95250af8e99c6feaad3d4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>39845ad583b95250af8e99c6feaad3d1</id>
+        <name>Notify Users on Bus Details Update</name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 08:30:03</sys_created_on>
+        <sys_id>3d845ad583b95250af8e99c6feaad3d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 08:30:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3d845ad583b95250af8e99c6feaad3d4"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=39845ad583b95250af8e99c6feaad3d1^sys_idNOT IN03d86e9183759250af8e99c6feaad3b3,4bd86e9183759250af8e99c6feaad3ae,4fd86e9183759250af8e99c6feaad3a8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Users on Bus Details Update">39845ad583b95250af8e99c6feaad3d1</model>
+        <model_id>39845ad583b95250af8e99c6feaad3d1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_39845ad583b95250af8e99c6feaad3d1</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>03d86e9183759250af8e99c6feaad3b3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=03d86e9183759250af8e99c6feaad3b3"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">ee9284bef8f2021008dd9cfea425ac2d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Users on Bus Details Update">39845ad583b95250af8e99c6feaad3d1</model>
+        <model_id>39845ad583b95250af8e99c6feaad3d1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_39845ad583b95250af8e99c6feaad3d1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>4bd86e9183759250af8e99c6feaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4bd86e9183759250af8e99c6feaad3ae"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Users on Bus Details Update">39845ad583b95250af8e99c6feaad3d1</model>
+        <model_id>39845ad583b95250af8e99c6feaad3d1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_39845ad583b95250af8e99c6feaad3d1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>4fd86e9183759250af8e99c6feaad3a8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4fd86e9183759250af8e99c6feaad3a8"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=39845ad583b95250af8e99c6feaad3d1^sys_idNOT IN8b8afe5583bd9250af8e99c6feaad3e7,8fd8ae9183759250af8e99c6feaad304,978afe5583bd9250af8e99c6feaad3f1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Users on Bus Details Update">39845ad583b95250af8e99c6feaad3d1</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>8b8afe5583bd9250af8e99c6feaad3e7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:53</sys_updated_on>
+        <ui_id>b49c1ebf-11f8-4707-b4f9-b4a4958d20d7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8b8afe5583bd9250af8e99c6feaad3e7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8b8afe5583bd9250af8e99c6feaad3e7</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>078afe5583bd9250af8e99c6feaad3e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:10</sys_updated_on>
+        <value>group=a0ca35bf83991210af8e99c6feaad3d4</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8b8afe5583bd9250af8e99c6feaad3e7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>c78afe5583bd9250af8e99c6feaad3e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:10</sys_updated_on>
+        <value>sys_group_has_role</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=8b8afe5583bd9250af8e99c6feaad3e7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8b8afe5583bd9250af8e99c6feaad3e7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8b8afe5583bd9250af8e99c6feaad3e7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Users on Bus Details Update">39845ad583b95250af8e99c6feaad3d1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>8fd8ae9183759250af8e99c6feaad304</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:53</sys_updated_on>
+        <ui_id>0cb06f04-b629-465f-8db2-2ef95ca69372</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8fd8ae9183759250af8e99c6feaad304"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8fd8ae9183759250af8e99c6feaad304</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>c3d8ae9183759250af8e99c6feaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <value>x_1521017_bus_seat_seat_reservation</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8fd8ae9183759250af8e99c6feaad304"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>8fd8ae9183759250af8e99c6feaad304</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>4bd8ae9183759250af8e99c6feaad307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>bus={{Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>8fd8ae9183759250af8e99c6feaad304</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>43d8ae9183759250af8e99c6feaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8fd8ae9183759250af8e99c6feaad304"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8fd8ae9183759250af8e99c6feaad304"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Users on Bus Details Update">39845ad583b95250af8e99c6feaad3d1</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>978afe5583bd9250af8e99c6feaad3f1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:53</sys_updated_on>
+        <ui_id>55e82dfa-21de-4a3e-826f-6169550ab707</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=978afe5583bd9250af8e99c6feaad3f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>978afe5583bd9250af8e99c6feaad3f1</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>1f8afe5583bd9250af8e99c6feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:10</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>978afe5583bd9250af8e99c6feaad3f1</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>df8afe5583bd9250af8e99c6feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:10</sys_updated_on>
+        <value>Details about the Bus that you've reserved for has been updated!</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=978afe5583bd9250af8e99c6feaad3f1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>978afe5583bd9250af8e99c6feaad3f1</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>178afe5583bd9250af8e99c6feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_pill  accepts_transform_functions" style="border: 1px solid RGB(var(--now-color--primary-1, 30, 133, 109));" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:be11eb9b-bfec-4890-a848-b10409f2686c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Bus Company"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Bus Company&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_be11eb9b-bfec-4890-a848-b10409f2686c" class="transform_function_facade no_transform_applied"&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_pill  accepts_transform_functions" style="border: 1px solid RGB(var(--now-color--primary-1, 30, 133, 109));" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:9cec3af9-bd4c-4f0d-9028-0eb388c619d1}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Number"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_9cec3af9-bd4c-4f0d-9028-0eb388c619d1" class="transform_function_facade no_transform_applied"&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:4bccaa13-9077-4a25-8f34-0aaf20a04314}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:4bccaa13-9077-4a25-8f34-0aaf20a04314}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Departure Schedule"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Departure Schedule&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_4bccaa13-9077-4a25-8f34-0aaf20a04314" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:5dcec0eb-b299-49f7-813a-588afbcecc26}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:5dcec0eb-b299-49f7-813a-588afbcecc26}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Status"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Status&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_5dcec0eb-b299-49f7-813a-588afbcecc26" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_pill  accepts_transform_functions" style="border: 1px solid RGB(var(--now-color--primary-1, 30, 133, 109));" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:3c6d1c47-26e2-4744-9a6b-c4bdfcec70d8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Updated"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Updated&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_3c6d1c47-26e2-4744-9a6b-c4bdfcec70d8" class="transform_function_facade no_transform_applied"&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>978afe5583bd9250af8e99c6feaad3f1</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>9b8afe5583bd9250af8e99c6feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value> {{b49c1ebf-11f8-4707-b4f9-b4a4958d20d7.Records}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>978afe5583bd9250af8e99c6feaad3f1</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>d78afe5583bd9250af8e99c6feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>978afe5583bd9250af8e99c6feaad3f1</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:10</sys_created_on>
+        <sys_id>538afe5583bd9250af8e99c6feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:10</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{0cb06f04-b629-465f-8db2-2ef95ca69372.Record.applicant}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=978afe5583bd9250af8e99c6feaad3f1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=978afe5583bd9250af8e99c6feaad3f1"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=39845ad583b95250af8e99c6feaad3d1^sys_idNOT IN0d5c2e9d83b59250af8e99c6feaad310,495c2e9d83b59250af8e99c6feaad310,815c2e9d83b59250af8e99c6feaad311,855c2e9d83b59250af8e99c6feaad310,cd5c2e9d83b59250af8e99c6feaad310"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>39845ad583b95250af8e99c6feaad3d1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 10:14:02</sys_created_on>
+        <sys_id>0d5c2e9d83b59250af8e99c6feaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 10:14:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9cec3af9-bd4c-4f0d-9028-0eb388c619d1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>39845ad583b95250af8e99c6feaad3d1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_updated_on}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 10:14:02</sys_created_on>
+        <sys_id>495c2e9d83b59250af8e99c6feaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 10:14:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3c6d1c47-26e2-4744-9a6b-c4bdfcec70d8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>39845ad583b95250af8e99c6feaad3d1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.status}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 10:14:02</sys_created_on>
+        <sys_id>815c2e9d83b59250af8e99c6feaad311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 10:14:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5dcec0eb-b299-49f7-813a-588afbcecc26</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>39845ad583b95250af8e99c6feaad3d1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.bus_company}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 10:14:02</sys_created_on>
+        <sys_id>855c2e9d83b59250af8e99c6feaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 10:14:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>be11eb9b-bfec-4890-a848-b10409f2686c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>39845ad583b95250af8e99c6feaad3d1</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.departure_schedule}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 10:14:02</sys_created_on>
+        <sys_id>cd5c2e9d83b59250af8e99c6feaad310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 10:14:02</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4bccaa13-9077-4a25-8f34-0aaf20a04314</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_39845ad583b95250af8e99c6feaad3d1^sys_idNOT IN43d86e9183759250af8e99c6feaad3ad,4bd86e9183759250af8e99c6feaad3b1,c7d86e9183759250af8e99c6feaad3e7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_39845ad583b95250af8e99c6feaad3d1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>43d86e9183759250af8e99c6feaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_39845ad583b95250af8e99c6feaad3d1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>4bd86e9183759250af8e99c6feaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_39845ad583b95250af8e99c6feaad3d1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:58:53</sys_created_on>
+        <sys_id>c7d86e9183759250af8e99c6feaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:58:53</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_39845ad583b95250af8e99c6feaad3d1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>notify_users_on_bus_details_update</internal_name>
+        <label_cache>[{"name":"Updated_1.current.status","label":"Trigger - Record Updated➛Bus Unit Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"status","choices":[{"used":false,"image":"","label":"Operational","reference":false,"rawLabel":"Operational","selected":false,"missing":false,"value":"operational","parameters":{"name":"x_1521017_bus_seat_bus_unit"}},{"used":false,"image":"","label":"Defunct","reference":false,"rawLabel":"Defunct","selected":false,"missing":false,"value":"defunct","parameters":{"name":"x_1521017_bus_seat_bus_unit"}}],"usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"Updated_1.current.departure_schedule","label":"Trigger - Record Updated➛Bus Unit Record➛Departure Schedule","reference":"","reference_display":"Departure Schedule","type":"glide_date","base_type":"glide_date","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"departure_schedule","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"Updated_1.current.number","label":"Trigger - Record Updated➛Bus Unit Record➛Number","reference":"","reference_display":"Number","type":"string","base_type":"string","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"number","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"Updated_1.current.sys_updated_on","label":"Trigger - Record Updated➛Bus Unit Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"sys_updated_on","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"Updated_1.current.bus_company","label":"Trigger - Record Updated➛Bus Unit Record➛Bus Company","reference":"x_1521017_bus_seat_bus_company","reference_display":"Bus Company","type":"reference","base_type":"reference","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"bus_company","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":[null]}},{"name":"0cb06f04-b629-465f-8db2-2ef95ca69372.Record.applicant","label":"1 - Look Up Record➛Seat Reservation Record➛Applicant","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1521017_bus_seat_seat_reservation","column_name":"applicant","usedInstances":{"30ca8ded-d9ad-4241-a735-f75dabf84899":["ah_to"],"55e82dfa-21de-4a3e-826f-6169550ab707":["ah_to"]}},{"name":"Updated_1.current.sys_id","label":"Trigger - Record Updated➛Bus Unit Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1521017_bus_seat_bus_unit","column_name":"sys_id","usedInstances":{"bb594e9a-5e14-4669-bcc2-2052e026c23a":["conditions"],"0cb06f04-b629-465f-8db2-2ef95ca69372":["conditions"]}},{"name":"bb594e9a-5e14-4669-bcc2-2052e026c23a.Records","label":"1 - Look Up Records➛Seat Reservation Records","reference":"x_1521017_bus_seat_seat_reservation","reference_display":"Seat Reservation","type":"records","base_type":"records","usedInstances":{},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0cb06f04-b629-465f-8db2-2ef95ca69372.Record.applicant_s_email","label":"1 - Look Up Record➛Seat Reservation Record➛Applicant\u0027s Email","reference":"","reference_display":"Applicant\u0027s Email","type":"string","base_type":"string","parent_table_name":"x_1521017_bus_seat_seat_reservation","column_name":"applicant_s_email","usedInstances":{}},{"name":"292c1c0e-d58c-4dd1-842d-72cfce2934b9.Record.user","label":"2 - Look Up Record➛Group Member Record➛User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user_grmember","column_name":"user","usedInstances":{"55e82dfa-21de-4a3e-826f-6169550ab707":["ah_cc"]}},{"name":"b49c1ebf-11f8-4707-b4f9-b4a4958d20d7.Records","label":"2 - Look Up Records➛Group Role Records","reference":"sys_group_has_role","reference_display":"Group Role","type":"records","base_type":"records","usedInstances":{"55e82dfa-21de-4a3e-826f-6169550ab707":["ah_cc"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Notify Users on Bus Details Update</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Notify Users on Bus Details Update">39845ad583b95250af8e99c6feaad3d1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>55e826d183759250af8e99c6feaad39f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=55e826d183759250af8e99c6feaad39f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=55e826d183759250af8e99c6feaad39f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=55e826d183759250af8e99c6feaad39f^sys_idNOT INa9e866d183759250af8e99c6feaad382"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Users on Bus Details Update">55e826d183759250af8e99c6feaad39f</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:04</sys_created_on>
+        <sys_id>a9e866d183759250af8e99c6feaad382</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:14</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a9e866d183759250af8e99c6feaad382"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a9e866d183759250af8e99c6feaad382</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:04</sys_created_on>
+        <sys_id>25e866d183759250af8e99c6feaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:04</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a9e866d183759250af8e99c6feaad382</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:04</sys_created_on>
+        <sys_id>61e866d183759250af8e99c6feaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:04</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a9e866d183759250af8e99c6feaad382</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:04</sys_created_on>
+        <sys_id>e5e866d183759250af8e99c6feaad384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:04</sys_updated_on>
+        <value>x_1521017_bus_seat_bus_unit</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=a9e866d183759250af8e99c6feaad382"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=55e826d183759250af8e99c6feaad39f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=55e826d183759250af8e99c6feaad39f^sys_idNOT IN11e826d183759250af8e99c6feaad3a1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>55e826d183759250af8e99c6feaad39f</id>
+        <name>Notify Users on Bus Details Update</name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>11e826d183759250af8e99c6feaad3a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=11e826d183759250af8e99c6feaad3a1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=55e826d183759250af8e99c6feaad39f^sys_idNOT IN95e826d183759250af8e99c6feaad3a2,e1e826d183759250af8e99c6feaad3f0,e9e866d183759250af8e99c6feaad31f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Users on Bus Details Update">55e826d183759250af8e99c6feaad39f</model>
+        <model_id>55e826d183759250af8e99c6feaad39f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_55e826d183759250af8e99c6feaad39f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>95e826d183759250af8e99c6feaad3a2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=95e826d183759250af8e99c6feaad3a2"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">ee9284bef8f2021008dd9cfea425ac2d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Notify Users on Bus Details Update">55e826d183759250af8e99c6feaad39f</model>
+        <model_id>55e826d183759250af8e99c6feaad39f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_55e826d183759250af8e99c6feaad39f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>e1e826d183759250af8e99c6feaad3f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 10:07:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e1e826d183759250af8e99c6feaad3f0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Notify Users on Bus Details Update">55e826d183759250af8e99c6feaad39f</model>
+        <model_id>55e826d183759250af8e99c6feaad39f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_55e826d183759250af8e99c6feaad39f</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>e9e866d183759250af8e99c6feaad31f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e9e866d183759250af8e99c6feaad31f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=55e826d183759250af8e99c6feaad39f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=55e826d183759250af8e99c6feaad39f"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=55e826d183759250af8e99c6feaad39f^sys_idNOT INb78a329583bd9250af8e99c6feaad3aa,e5e866d183759250af8e99c6feaad34e,f38a329583bd9250af8e99c6feaad3b5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Users on Bus Details Update">55e826d183759250af8e99c6feaad39f</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:12</sys_created_on>
+        <sys_id>b78a329583bd9250af8e99c6feaad3aa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <ui_id>b49c1ebf-11f8-4707-b4f9-b4a4958d20d7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b78a329583bd9250af8e99c6feaad3aa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b78a329583bd9250af8e99c6feaad3aa</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:12</sys_created_on>
+        <sys_id>338a329583bd9250af8e99c6feaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:12</sys_updated_on>
+        <value>group=a0ca35bf83991210af8e99c6feaad3d4</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b78a329583bd9250af8e99c6feaad3aa</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:12</sys_created_on>
+        <sys_id>f38a329583bd9250af8e99c6feaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:12</sys_updated_on>
+        <value>sys_group_has_role</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=b78a329583bd9250af8e99c6feaad3aa"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b78a329583bd9250af8e99c6feaad3aa"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b78a329583bd9250af8e99c6feaad3aa"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Users on Bus Details Update">55e826d183759250af8e99c6feaad39f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>e5e866d183759250af8e99c6feaad34e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <ui_id>0cb06f04-b629-465f-8db2-2ef95ca69372</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e5e866d183759250af8e99c6feaad34e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e5e866d183759250af8e99c6feaad34e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:04</sys_created_on>
+        <sys_id>25e866d183759250af8e99c6feaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:04</sys_updated_on>
+        <value>x_1521017_bus_seat_seat_reservation</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e5e866d183759250af8e99c6feaad34e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e5e866d183759250af8e99c6feaad34e</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>ede866d183759250af8e99c6feaad34f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:03</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>bus={{Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e5e866d183759250af8e99c6feaad34e</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:04</sys_created_on>
+        <sys_id>a1e866d183759250af8e99c6feaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:04</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e5e866d183759250af8e99c6feaad34e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e5e866d183759250af8e99c6feaad34e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Notify Users on Bus Details Update">55e826d183759250af8e99c6feaad39f</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>f38a329583bd9250af8e99c6feaad3b5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <ui_id>55e82dfa-21de-4a3e-826f-6169550ab707</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f38a329583bd9250af8e99c6feaad3b5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f38a329583bd9250af8e99c6feaad3b5</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>3f8a329583bd9250af8e99c6feaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <value>Details about the Bus that you've reserved for has been updated!</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f38a329583bd9250af8e99c6feaad3b5</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>7b8a329583bd9250af8e99c6feaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f38a329583bd9250af8e99c6feaad3b5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>f38a329583bd9250af8e99c6feaad3b5</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>738a329583bd9250af8e99c6feaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_pill  accepts_transform_functions" style="border: 1px solid RGB(var(--now-color--primary-1, 30, 133, 109));" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:be11eb9b-bfec-4890-a848-b10409f2686c}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Bus Company"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Bus Company&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_be11eb9b-bfec-4890-a848-b10409f2686c" class="transform_function_facade no_transform_applied"&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_pill  accepts_transform_functions" style="border: 1px solid RGB(var(--now-color--primary-1, 30, 133, 109));" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:9cec3af9-bd4c-4f0d-9028-0eb388c619d1}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Number"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Number&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_9cec3af9-bd4c-4f0d-9028-0eb388c619d1" class="transform_function_facade no_transform_applied"&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:4bccaa13-9077-4a25-8f34-0aaf20a04314}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:4bccaa13-9077-4a25-8f34-0aaf20a04314}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Departure Schedule"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Departure Schedule&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_4bccaa13-9077-4a25-8f34-0aaf20a04314" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:5dcec0eb-b299-49f7-813a-588afbcecc26}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:5dcec0eb-b299-49f7-813a-588afbcecc26}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Status"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Status&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_5dcec0eb-b299-49f7-813a-588afbcecc26" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p data-tinymcerootblock=""&gt;&lt;span class="data_pill  accepts_transform_functions" style="border: 1px solid RGB(var(--now-color--primary-1, 30, 133, 109));" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:3c6d1c47-26e2-4744-9a6b-c4bdfcec70d8}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-tooltip-id="ah_tooltipTop" data-tooltip-content="Trigger - Record Updated &amp;gt; Bus Unit Record &amp;gt; Updated"&gt;&lt;span class="pill-start"&gt;Trigger - Record Updated&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Updated&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_3c6d1c47-26e2-4744-9a6b-c4bdfcec70d8" class="transform_function_facade no_transform_applied"&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_cc</field>
+        <id>f38a329583bd9250af8e99c6feaad3b5</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>f78a329583bd9250af8e99c6feaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value> {{b49c1ebf-11f8-4707-b4f9-b4a4958d20d7.Records}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>f38a329583bd9250af8e99c6feaad3b5</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>378a329583bd9250af8e99c6feaad3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>f38a329583bd9250af8e99c6feaad3b5</id>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>bf8a329583bd9250af8e99c6feaad3b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{0cb06f04-b629-465f-8db2-2ef95ca69372.Record.applicant}} </value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f38a329583bd9250af8e99c6feaad3b5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f38a329583bd9250af8e99c6feaad3b5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=55e826d183759250af8e99c6feaad39f"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=55e826d183759250af8e99c6feaad39f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=55e826d183759250af8e99c6feaad39f^sys_idNOT IN378a329583bd9250af8e99c6feaad3d0,738a329583bd9250af8e99c6feaad3d0,7f8a329583bd9250af8e99c6feaad3d0,bb8a329583bd9250af8e99c6feaad3d0,f78a329583bd9250af8e99c6feaad3d0"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>55e826d183759250af8e99c6feaad39f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.status}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>378a329583bd9250af8e99c6feaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5dcec0eb-b299-49f7-813a-588afbcecc26</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>55e826d183759250af8e99c6feaad39f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.sys_updated_on}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>738a329583bd9250af8e99c6feaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>3c6d1c47-26e2-4744-9a6b-c4bdfcec70d8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>55e826d183759250af8e99c6feaad39f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.number}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>7f8a329583bd9250af8e99c6feaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>9cec3af9-bd4c-4f0d-9028-0eb388c619d1</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>55e826d183759250af8e99c6feaad39f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.departure_schedule}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>bb8a329583bd9250af8e99c6feaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>4bccaa13-9077-4a25-8f34-0aaf20a04314</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>55e826d183759250af8e99c6feaad39f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Updated_1.current.bus_company}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 11:16:13</sys_created_on>
+        <sys_id>f78a329583bd9250af8e99c6feaad3d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>be11eb9b-bfec-4890-a848-b10409f2686c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=55e826d183759250af8e99c6feaad39f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_55e826d183759250af8e99c6feaad39f^sys_idNOT IN69e866d183759250af8e99c6feaad31a,e1e826d183759250af8e99c6feaad3eb,ede866d183759250af8e99c6feaad330"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_55e826d183759250af8e99c6feaad39f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>69e866d183759250af8e99c6feaad31a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_55e826d183759250af8e99c6feaad39f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>e1e826d183759250af8e99c6feaad3eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_55e826d183759250af8e99c6feaad39f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:03</sys_created_on>
+        <sys_id>ede866d183759250af8e99c6feaad330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 09:59:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_55e826d183759250af8e99c6feaad39f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_55e826d183759250af8e99c6feaad39f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_55e826d183759250af8e99c6feaad39f"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>39845ad583b95250af8e99c6feaad3d1</sys_id>
+        <latest_snapshot>55e826d183759250af8e99c6feaad39f</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch4-hotfix1-06-10-2024_06-17-2024_2231.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=39845ad583b95250af8e99c6feaad3d1^sys_idNOT INf1e866d183759250af8e99c6feaad3d0"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f1e866d183759250af8e99c6feaad3d0","name":"plan","plan_signature":null}}</plan>
+        <plan_id>39845ad583b95250af8e99c6feaad3d1</plan_id>
+        <snapshot>6dba769583bd9250af8e99c6feaad38c</snapshot>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 09:59:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f1e866d183759250af8e99c6feaad3d0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 11:16:13</sys_updated_on>
+        <trigger display_value="">b1e866d183759250af8e99c6feaad3ce</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=39845ad583b95250af8e99c6feaad3d1"/>
+</record_update>

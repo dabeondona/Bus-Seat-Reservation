@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1521017_bus_seat_bus_unit</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Bus Unit Update</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	// Add your code here
+	if (current.changes()) {
+	var reservationGR = new GlideRecord('x_1521017_bus_seat_seat_reservation'); 
+	reservationGR.addQuery('bus', current.sys_id);
+	reservationGR.query();
+	
+	while (reservationGR.next()) {
+		var reservationUser = reservationGR.getValue('applicant'); 
+		if (reservationUser) {
+			gs.eventQueue('bus_unit_update', current, reservationUser, '');
+		}
+	}
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-04 00:44:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8eaf2d1b83219610af8e99c6feaad3a6</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Bus Unit Update</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>sys_script_8eaf2d1b83219610af8e99c6feaad3a6</sys_update_name>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-04 02:42:15</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=8eaf2d1b83219610af8e99c6feaad3a6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</application>
+        <file_path/>
+        <instance_id>b5e9cac93bc346d8baf6048aa4e45aab</instance_id>
+        <instance_name>dev277382</instance_name>
+        <name>sys_script_8eaf2d1b83219610af8e99c6feaad3a6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1521017_bus_seat_bus_unit&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Bus Unit Update&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	// Add your code here
+	if (current.changes()) {
+	var reservationGR = new GlideRecord('x_1521017_bus_seat_seat_reservation'); 
+	reservationGR.addQuery('bus', current.sys_id);
+	reservationGR.query();
+	
+	while (reservationGR.next()) {
+		var reservationUser = reservationGR.getValue('applicant'); 
+		if (reservationUser) {
+			gs.eventQueue('bus_unit_update', current, reservationUser, '');
+		}
+	}
+	}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;susan.marsh&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-04 00:44:13&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8eaf2d1b83219610af8e99c6feaad3a6&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Bus Unit Update&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat"&gt;faa451f383111210af8e99c6feaad3bc&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Bus Seat Reservation"&gt;faa451f383111210af8e99c6feaad3bc&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_8eaf2d1b83219610af8e99c6feaad3a6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;susan.marsh&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-04 02:42:15&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=8eaf2d1b83219610af8e99c6feaad3a6"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1516805190</payload_hash>
+        <record_name>Bus Unit Update</record_name>
+        <reverted_from/>
+        <source>6c6da2b483611210af8e99c6feaad364</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-04 02:42:15</sys_created_on>
+        <sys_id>e46b8edb83a99610af8e99c6feaad376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192f50d32f90000001</sys_recorded_at>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-04 02:42:15</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>e86b8edb5da99610516dcf3dc519f575</update_guid>
+        <update_guid_history>e86b8edb5da99610516dcf3dc519f575:1516805190,b43b0adb35a99610167543519167e01e:1479203652,66b6069fcd299610d5a53fa7456b60df:1516805190,2196ce1fd129961079bedc3850c570ca:229540824,10260e97fb299610a58cfd8ccbde4f7f:1516805190,38e5c65fa4e5961064c970b08d1c98e2:-230033875,d5200a5b0d259610d38a5c23ef2844cd:1516805190,7d85311f41a19610d7e361b3cfd4954f:-1404912772,eb50f95fbe2196105f3a2bb8d992107e:-351390073</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>susan.marsh</sys_created_by>
+        <sys_created_on>2024-11-10 10:09:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>176a758c51ee4fe8b8721a5df7961d90</sys_id>
+        <sys_metadata>8eaf2d1b83219610af8e99c6feaad3a6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bus Unit Update</sys_name>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_parent display_value="Bus Unit">6e6719bb83111210af8e99c6feaad3d8</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_scope_delete display_value="">4070ad42ed67447bbcac6592671efb79</sys_scope_delete>
+        <sys_update_name>sys_script_8eaf2d1b83219610af8e99c6feaad3a6</sys_update_name>
+        <sys_update_version display_value="sys_script_8eaf2d1b83219610af8e99c6feaad3a6">e46b8edb83a99610af8e99c6feaad376</sys_update_version>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-10 10:09:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

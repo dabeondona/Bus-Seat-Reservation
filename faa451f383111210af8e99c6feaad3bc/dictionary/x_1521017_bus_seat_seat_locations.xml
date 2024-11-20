@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d60f772d8371da50af8e99c6feaad3f2" label="Seat Locations" max_length="40" name="x_1521017_bus_seat_seat_locations" type="collection"/>
+</database>

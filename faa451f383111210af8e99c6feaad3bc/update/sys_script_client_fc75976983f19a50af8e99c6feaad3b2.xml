@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Notifying about how long will it take for the bus to arrive at the origin location.</description>
+        <field>origin</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>[Seat Reservation] Bus Arrival Notif</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // Assume South Bus Terminal is the name of your terminal field.
+    var terminal = g_form.getValue('South Bus Terminal'); 
+
+    // Only show the popup if origin is different from terminal
+    if (newValue !== terminal) {
+        // Calculate the estimated time based on the origin
+        var estimatedTime = calculateEstimatedArrivalTime(newValue, terminal);
+
+        // Show the popup alert
+        alert("Estimated time for bus to arrive at origin: " + estimatedTime + " minutes.");
+    }
+}
+
+function calculateEstimatedArrivalTime(origin, terminal) {
+    // Define an average speed in km/h
+    var averageSpeed = 40; // km/h
+
+    // Define distances in kilometers from various origins to the terminal
+    var distances = {
+        "CIT": 10,   // Distance from Station A to Terminal in km
+        "Bulacao": 20,   // Distance from Station B to Terminal in km
+        "North Bus Terminal": 30,   // Distance from Station C to Terminal in km
+        "Minglanilla": 50    // Distance from Station D to Terminal in km
+        // Add more stations as needed Minglanilla
+    };
+
+    // Get the distance from the origin to the terminal
+    var distance = distances[origin];
+
+    // Check if the origin is valid and has a defined distance
+    if (distance === undefined) {
+        return "unknown"; // Return "unknown" if the origin isn't found
+    }
+
+    // Calculate the estimated travel time in hours, then convert to minutes
+    var travelTimeHours = distance / averageSpeed; // Time = Distance / Speed
+    var travelTimeMinutes = travelTimeHours * 60;
+
+    // Return the rounded travel time in minutes
+    return Math.round(travelTimeMinutes);
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rebecca.holmes</sys_created_by>
+        <sys_created_on>2024-11-11 07:56:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc75976983f19a50af8e99c6feaad3b2</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>[Seat Reservation] Bus Arrival Notif</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
+        <sys_update_name>sys_script_client_fc75976983f19a50af8e99c6feaad3b2</sys_update_name>
+        <sys_updated_by>rebecca.holmes</sys_updated_by>
+        <sys_updated_on>2024-11-11 09:12:57</sys_updated_on>
+        <table>x_1521017_bus_seat_seat_reservation</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

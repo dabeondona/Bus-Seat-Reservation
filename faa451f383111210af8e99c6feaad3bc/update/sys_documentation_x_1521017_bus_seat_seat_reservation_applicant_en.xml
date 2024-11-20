@@ -9,16 +9,16 @@
             <name>x_1521017_bus_seat_seat_reservation</name>
             <plural>Applicants</plural>
             <sys_class_name>sys_documentation</sys_class_name>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-24 02:02:05</sys_created_on>
+            <sys_created_by>susan.marsh</sys_created_by>
+            <sys_created_on>2024-11-04 01:20:22</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Applicant</sys_name>
             <sys_package display_value="Bus Seat Reservation" source="x_1521017_bus_seat">faa451f383111210af8e99c6feaad3bc</sys_package>
             <sys_policy/>
             <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
             <sys_update_name>sys_documentation_x_1521017_bus_seat_seat_reservation_applicant_en</sys_update_name>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-24 02:02:05</sys_updated_on>
+            <sys_updated_by>susan.marsh</sys_updated_by>
+            <sys_updated_on>2024-11-04 01:20:22</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

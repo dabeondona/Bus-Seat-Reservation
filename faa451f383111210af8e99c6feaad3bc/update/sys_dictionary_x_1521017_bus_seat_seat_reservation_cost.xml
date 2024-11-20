@@ -5,7 +5,7 @@
         <attributes>omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Cost</column_label>
@@ -52,8 +52,8 @@
         <sys_policy/>
         <sys_scope display_value="Bus Seat Reservation">faa451f383111210af8e99c6feaad3bc</sys_scope>
         <sys_update_name>sys_dictionary_x_1521017_bus_seat_seat_reservation_cost</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-24 02:02:05</sys_updated_on>
+        <sys_updated_by>susan.marsh</sys_updated_by>
+        <sys_updated_on>2024-11-03 12:23:15</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
